@@ -25,5 +25,5 @@ public class Livro {
     private String nome;
     //id_usuario/editora...
 
-    @ManyToMany
+
 }
