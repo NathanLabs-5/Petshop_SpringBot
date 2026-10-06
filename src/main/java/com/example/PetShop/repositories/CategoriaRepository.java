@@ -3,5 +3,5 @@ package com.example.PetShop.repositories;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AutorRepository {
+public interface CategoriaRepository {
 }

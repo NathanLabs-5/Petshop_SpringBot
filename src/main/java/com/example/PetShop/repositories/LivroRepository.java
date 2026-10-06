@@ -1,4 +1,7 @@
 package com.example.PetShop.repositories;
 
-public class LivroRepository {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface LivroRepository {
 }

@@ -8,23 +8,18 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
-@Table(name = "autores")
+@Table(name = "categorias")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class Autor {
+public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idAutor;
-    private String nome;
+    private Integer idCategoria;
+    private String nomeCategoria;
 
-    @ManyToMany(mappedBy = "autores")
-    private List<Livro> livros = new ArrayList<>();
-
+    @ManyToMany
 }

@@ -1,10 +1,8 @@
 package com.example.PetShop.services;
 
 
-import com.example.PetShop.entities.Livro;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LivroService {
-
+public class CategoriaService {
 }
