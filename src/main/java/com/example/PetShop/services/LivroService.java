@@ -1,7 +1,7 @@
 package com.example.PetShop.services;
 
 
-import com.example.PetShop.dto.livro_schema;
+import com.example.PetShop.dto.Livro_schema;
 import com.example.PetShop.entities.Autor;
 import com.example.PetShop.entities.Categoria;
 import com.example.PetShop.entities.Livro;
@@ -26,12 +26,10 @@ public class LivroService {
     @Autowired
     private CategoriaRepository categoriaRepository;
 
-    public Livro cadastrar(livro_schema dados) {
+    public Livro cadastrar(Livro_schema dados) {
 
         Livro livro = new Livro();
-
         livro.setNome(dados.getNome());
-
         List<Autor> autores = new ArrayList<>();
 
         for (Integer id : dados.getAutores()) {

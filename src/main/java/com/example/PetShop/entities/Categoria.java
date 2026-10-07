@@ -2,6 +2,7 @@ package com.example.PetShop.entities;
 
 
 import com.example.PetShop.interfaceS.Categorias;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,6 +28,7 @@ public class Categoria {
     @Enumerated(EnumType.STRING)
     private Categorias nomeCategoria;
 
-    @ManyToMany(mappedBy = "categoria")
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categorias")
     private List<Livro> livros = new ArrayList<>();
 }

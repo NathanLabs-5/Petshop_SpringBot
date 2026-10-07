@@ -7,7 +7,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class livro_schema {
+public class Livro_schema {
     private String nome;
 
     private List<Integer> autores;

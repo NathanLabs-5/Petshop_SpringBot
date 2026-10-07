@@ -13,11 +13,11 @@ public class CategoriaService {
     @Autowired
     private CategoriaRepository categoriaRepository;
 
-    public Categoria salvarCategoria(Categoria categoria){
+    public Categoria salvarCategoria(Categoria categoria) {
         return categoriaRepository.save(categoria);
     }
 
-    public List<Categoria> listarCategorias(){
+    public List<Categoria> listarCategorias() {
         return categoriaRepository.findAll();
     }
 
@@ -28,5 +28,4 @@ public class CategoriaService {
     public void excluirCategoria(Integer id) {
         categoriaRepository.deleteById(id);
     }
-
 }

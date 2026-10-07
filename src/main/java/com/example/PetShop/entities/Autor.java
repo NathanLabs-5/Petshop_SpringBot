@@ -1,6 +1,7 @@
 package com.example.PetShop.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,6 +25,7 @@ public class Autor {
     private Integer idAutor;
     private String nome;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "autores")
     private List<Livro> livros = new ArrayList<>();
 
