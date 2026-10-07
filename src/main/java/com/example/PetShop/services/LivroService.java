@@ -50,4 +50,8 @@ public class LivroService {
 
         return livroRepository.save(livro);
     }
+
+    public List<Livro> listar() {
+        return livroRepository.findAll();
+    }
 }
